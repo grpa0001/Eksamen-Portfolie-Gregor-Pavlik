@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .nav {
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,15 +15,23 @@
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   color: #3a2e2a;
 }
 .nav-links {
-  margin: 16px;
-  padding: 10px 20px;
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  padding: 4px 20px;
   background-color: #8c6a52;
   color: white;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: 500;
 }
