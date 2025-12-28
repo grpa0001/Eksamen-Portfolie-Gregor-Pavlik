@@ -157,5 +157,8 @@ p {
 
   #portrait {
     width: 50vh;
+    border-radius: 50px;
   }
 }
+
+/* lorem ipsum dolor sit amet lorem*/
