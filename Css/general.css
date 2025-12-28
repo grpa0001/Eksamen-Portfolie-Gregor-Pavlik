@@ -35,3 +35,95 @@
   border-radius: 6px;
   font-weight: 500;
 }
+
+#folderbox {
+  width: 150px;
+  height: auto;
+}
+
+main {
+  width: 100%;
+  height: calc(40vh - 100px);
+  background-image: url(../img/Heroimg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  text-align: left;
+  padding: 50px;
+}
+
+#portrait-hero {
+  width: 150px;
+  height: auto;
+  top: 100px;
+  left: 50px;
+  border: 4px solid #fff;
+}
+
+h1 {
+  font-size: 48px;
+  color: #3a2e2a;
+  align-self: center;
+  margin-left: 20px;
+}
+
+body {
+  background-color: #fff3e0;
+}
+
+#folderbox {
+  display: block;
+  margin: 40px auto;
+  width: 60%;
+}
+
+#Projekter-btn {
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 5px auto;
+  background-color: #8c6a52;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  color: white;
+  font-size: 24px;
+}
+
+#Om_mig-btn {
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 5px auto;
+  background-color: #8c6a52;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  color: white;
+  font-size: 24px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #3a2e2a;
+  padding-top: 10px;
+}
+
+#portrait {
+  display: block;
+  width: 20vh;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
