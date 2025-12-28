@@ -127,3 +127,35 @@ p {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
+@media (min-width: 768px) {
+  main {
+    height: 90vh; /* make it bigger on desktop */
+    background-image: url(../img/Heroimg.webp); /* optional different image */
+    background-position: center; /* optional */
+  }
+
+  .main-intro {
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 150px;
+  }
+
+  #portrait-hero {
+    width: 300px;
+    height: auto;
+    margin-left: 30%;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  #folderbox {
+    width: 40%;
+    height: auto;
+  }
+
+  #portrait {
+    width: 50vh;
+  }
+}
