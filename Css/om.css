@@ -29,6 +29,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #3a2e2a;
+  text-decoration: none; /* removes underline */
 }
 
 .nav-links {
@@ -125,4 +126,48 @@ p {
   text-align: left;
   border-left: #8c6a52 6px solid;
   padding: 20px;
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 90vh;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+  #portrait {
+    width: 50vh;
+  }
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding-right: 6%;
+  }
+
+  .about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .about-me-text {
+    width: 80%;
+    margin: 0;
+    border-style: none;
+    text-align: left;
+  }
+
+  #kontakt-h2 {
+    text-align: center;
+    margin-left: 2.5%;
+  }
+  p {
+    font-size: 13px;
+  }
 }
