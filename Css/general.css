@@ -1,11 +1,23 @@
+/* =========================
+   RESET
+   ========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   BODY
+   ========================= */
+body {
+  background-color: #fff3e0;
+}
+
+/* =========================
+   NAV
+   ========================= */
 .nav {
-  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +30,7 @@
   font-weight: bold;
   color: #3a2e2a;
 }
+
 .nav-links {
   display: flex;
   gap: 40px;
@@ -34,46 +47,58 @@
   font-weight: 500;
 }
 
-#folderbox {
-  width: 150px;
-  height: auto;
-}
+/* =========================
+   HERO (HTML images)
+   ========================= */
 
 main {
+  position: relative; /* parent container */
   width: 100%;
   height: calc(40vh - 100px);
-  background-image: url(../img/Heroimg.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
+/* hero background image */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* hero content (portrait + h1) */
 .main-intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  position: relative;
-  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
   padding: 50px;
+  z-index: 2;
 }
 
+/* portrait */
 #portrait-hero {
   width: 150px;
   height: auto;
-  top: 100px;
-  left: 50px;
   border: 4px solid #fff;
 }
 
+/* hero title */
 h1 {
   font-size: 48px;
   color: #3a2e2a;
-  align-self: center;
-  margin-left: 20px;
 }
 
-body {
-  background-color: #fff3e0;
-}
+/* =========================
+   OTHER CONTENT
+   ========================= */
 
 #folderbox {
   display: block;
@@ -81,20 +106,7 @@ body {
   width: 60%;
 }
 
-#Projekter-btn {
-  display: block;
-  width: 200px;
-  height: 60px;
-  margin: 5px auto;
-  background-color: #8c6a52;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 60px;
-  color: white;
-  font-size: 24px;
-}
-
+#Projekter-btn,
 #Om_mig-btn {
   display: block;
   width: 200px;
@@ -124,22 +136,18 @@ p {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
+/* =========================
+   DESKTOP
+   ========================= */
+
 @media (min-width: 768px) {
   main {
-    height: 90vh; /* make it bigger on desktop */
-    background-image: url(../img/Heroimg.webp); /* optional different image */
-    background-position: center; /* optional */
-  }
-
-  .main-intro {
-    grid-template-columns: 1fr 1fr;
-    padding: 100px 150px;
+    height: 90vh;
   }
 
   #portrait-hero {
     width: 300px;
-    height: auto;
-    margin-left: 30%;
   }
 
   h1 {
@@ -148,7 +156,6 @@ p {
 
   #folderbox {
     width: 31%;
-    height: auto;
   }
 
   #portrait {
