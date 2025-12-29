@@ -33,9 +33,9 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   list-style: none;
-  padding-right: 6%;
+  padding-right: 2%;
 }
 
 .nav-links a {
@@ -160,5 +160,11 @@ p {
 
   #portrait {
     width: 50vh;
+  }
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding-right: 6%;
   }
 }
