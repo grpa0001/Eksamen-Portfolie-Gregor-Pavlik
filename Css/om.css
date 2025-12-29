@@ -56,6 +56,7 @@ main {
   width: 100%;
   height: calc(40vh - 100px);
   overflow: hidden;
+  border-bottom: #8c6a52 8px solid;
 }
 
 /* hero background image */
@@ -68,64 +69,28 @@ main {
   z-index: 1;
 }
 
-/* hero content (portrait + h1) */
-.main-intro {
-  position: absolute;
+/* hero title */
+h1 {
+  font-size: 48px;
+  font-family: "DM Serif Text", serif;
+  color: #3a2e2a;
+  /* hero title */
+
+  position: absolute; /* 🔥 required */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  display: flex;
-  align-items: center;
-  gap: 24px;
-
-  padding: 50px;
+  font-size: 48px;
+  color: #3a2e2a;
   z-index: 2;
 }
 
-/* portrait */
-#portrait-hero {
-  width: 150px;
-  height: auto;
-  border: 4px solid #fff;
-}
-
-/* hero title */
-h1 {
-  font-size: 48px;
+h2 {
+  font-size: 30px;
   color: #3a2e2a;
-}
-
-/* =========================
-   OTHER CONTENT
-   ========================= */
-
-#folderbox {
-  display: block;
-  margin: 40px auto;
-  width: 60%;
-}
-
-#Projekter-btn,
-#Om_mig-btn {
-  display: block;
-  width: 200px;
-  height: 60px;
-  margin: 5px auto;
-  background-color: #8c6a52;
-  border-radius: 8px;
+  font-family: "DM Serif Text", serif;
   text-align: center;
-  text-decoration: none;
-  line-height: 60px;
-  color: white;
-  font-size: 24px;
-}
-
-p {
-  text-align: center;
-  font-size: 18px;
-  color: #3a2e2a;
-  padding-top: 10px;
 }
 
 #portrait {
@@ -137,34 +102,27 @@ p {
   padding-bottom: 20px;
 }
 
-/* =========================
-   DESKTOP
-   ========================= */
+p {
+  font-size: 12px;
+  color: #3a2e2a;
+  padding-top: 15px;
+  font-family: DM Sans, sans-serif;
+}
 
-@media (min-width: 768px) {
-  main {
-    height: 90vh;
-  }
+.about-me-text {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: left;
+  border-left: #8c6a52 6px solid;
+  padding: 20px;
+}
 
-  #portrait-hero {
-    width: 300px;
-  }
-
-  h1 {
-    font-size: 100px;
-  }
-
-  #folderbox {
-    width: 31%;
-  }
-
-  #portrait {
-    width: 50vh;
-  }
-  .nav-links {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    padding-right: 6%;
-  }
+.kontakt-info {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: left;
+  border-left: #8c6a52 6px solid;
+  padding: 20px;
 }
