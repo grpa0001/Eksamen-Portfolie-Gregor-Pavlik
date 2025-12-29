@@ -82,3 +82,46 @@ p {
   padding-left: 10px;
   padding-right: 10vh;
 }
+
+@media (min-width: 768px) {
+  .project1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    align-items: start;
+    gap: 60px;
+    margin-bottom: 120px;
+  }
+  .project2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    align-items: start;
+    gap: 60px;
+    margin-bottom: 120px;
+  }
+
+  .text {
+    grid-area: text;
+  }
+
+  .project1 h2 {
+    font-size: 65px;
+    padding-top: 100px;
+  }
+
+  .project2 h2 {
+    font-size: 65px;
+    padding-top: 40px;
+    margin-left: 100px;
+  }
+
+  .project1 p {
+    font-size: 22px;
+  }
+
+  .project2 p {
+    font-size: 22px;
+    margin-left: 100px;
+  }
+}
