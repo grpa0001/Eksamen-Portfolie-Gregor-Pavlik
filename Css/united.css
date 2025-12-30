@@ -105,7 +105,7 @@ p {
   color: white;
   border-radius: 6px;
   font-weight: 500;
-  display: inline-block; /* vigtigt */
+  display: inline-block;
   margin-top: 20px;
 }
 
