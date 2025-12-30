@@ -74,6 +74,14 @@ h2 {
   padding-left: 10px;
 }
 
+.OpgaveTitel {
+  font-family: DM sans;
+  text-align: center;
+  color: #3a2e2a;
+  font-size: 35px;
+  margin: 20px auto;
+}
+
 p {
   font-family: DM sans;
   text-align: left;
@@ -83,9 +91,24 @@ p {
   padding-right: 10vh;
 }
 
-.site-laptop {
+.laptop {
   display: block;
-  width: 80%;
+  width: 40%;
   height: auto;
   margin: 20px auto;
+}
+
+.sites-links a {
+  text-decoration: none;
+  padding: 10px 90px;
+  background-color: #8c6a52;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-block; /* vigtigt */
+  margin-top: 20px;
+}
+
+.sites-links {
+  text-align: center;
 }
