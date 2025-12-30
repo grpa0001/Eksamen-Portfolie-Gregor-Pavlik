@@ -112,3 +112,47 @@ p {
 .sites-links {
   text-align: center;
 }
+
+.text-content h2,
+.text-content p {
+  font-family: DM sans;
+  text-align: left;
+  color: #3a2e2a;
+  margin: 20px 20px;
+}
+
+img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
+
+@media (min-width: 900px) {
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 80px auto;
+  }
+
+  .text-content {
+    padding-right: 40px;
+  }
+
+  .text-content h2 {
+    font-size: 42px;
+  }
+
+  .text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .image-content img {
+    width: 100%;
+    margin-top: 220px;
+  }
+}
