@@ -2,9 +2,9 @@ const greeting = document.getElementById("greeting");
 const hour = new Date().getHours();
 
 if (hour < 12) {
-  greeting.textContent = "Good morning 👋";
+  greeting.textContent = "God Morgen";
 } else if (hour < 18) {
-  greeting.textContent = "Good afternoon 👋";
+  greeting.textContent = "God dag";
 } else {
-  greeting.textContent = "Good evening 👋";
+  greeting.textContent = "God aften";
 }
