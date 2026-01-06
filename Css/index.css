@@ -142,6 +142,11 @@ p {
   padding-bottom: 20px;
 }
 
+#greeting {
+  font-size: 25px;
+  padding-right: 10px;
+}
+
 /* =========================
    DESKTOP
    ========================= */
